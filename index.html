@@ -1,41 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="index.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Scripts for bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="./index.css" />
+  <title>website</title>
 </head>
+
 <body>
-<!--top navbar for logo and name of website and login/signup buttons-->
-    <div class="navbar">
-        <img src="" alt="not found">
-        <h1>Website</h1>
-
-        <button>Login/Signup</button>
-        <img src="" alt="cart" class="cart">
-       
-     <!--sub navbar to contain categories-->
-        <div class="cat">
-            <a href="">men</a>
-            <a href="">women</a>
-            <a href="">electronics</a>
-            <a href="">personal hygiene</a>
+  <!-- featured product carousel  -->
+  <div id="featured-carousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active border pb-3">
+        <div class="container">
+          <div class="row align-items-center">
+            <h2 class="col-3">Festival<br />super sale</h2>
+            <img class="col-4" src="./ft_images/banner-1.jpg" alt="ft banner 1" />
+            <div class="col-5">
+              <h3>
+                Flagship killer
+                <span class="badge badge-secondary">NEW</span>
+              </h3>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">xyz phone</li>
+                <li class="list-group-item">tri cams</li>
+                <li class="list-group-item">oled display</li>
+                <li class="list-group-item">stereo speakers</li>
+                <li class="list-group-item text-primary">For 29,000 rs</li>
+                <br />
+              </ul>
+              <button class="btn btn-primary">Buy now</button>
+            </div>
+          </div>
         </div>
-
-
-<!--fooooooter-->
-        <div class="footer">
-
-        </div>        
-
-
-
-
+      </div>
+      <div class="carousel-item border pb-3">
+        <div class="container">
+          <div class="row align-items-center">
+            <h2 class="col-3">BIG<br />MARKET SALE</h2>
+            <img class="col-4" src="./ft_images/banner-2.jpg" alt="ft banner 2" />
+            <div class="col-5">
+              <h3>
+                Deal of the month
+              </h3>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Smart Inverter Compressor</li>
+                <li class="list-group-item">Dual Fridge</li>
+                <li class="list-group-item">Multi Air Flow</li>
+                <li class="list-group-item">Royale Handle</li>
+                <li class="list-group-item">Moist ‘N’ Fresh</li>
+                <br />
+              </ul>
+              <button class="btn btn-primary">Buy now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item border pb-3">
+        <div class="container">
+          <div class="row align-items-center">
+            <h2 class="col-3">Flash sale</h2>
+            <img class="col-4" src="./ft_images/banner-3.jpg" alt="ft banner 3" />
+            <div class="col-5">
+              <h3>
+                Samsung
+                <span class="badge badge-secondary">SALE</span>
+              </h3>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">U70 pro (256 GB | 8GB)</li>
+                <li class="list-group-item">Oled display</li>
+                <li class="list-group-item">5G & wifi 6</li>
+                <li class="list-group-item">Android 11</li>
+                <li class="list-group-item text-primary">
+                  Now Just for 37,000 rs
+                </li>
+                <br />
+              </ul>
+              <button class="btn btn-primary">Shop now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item border pb-3">
+        <div class="container">
+          <div class="row align-items-center">
+            <h2 class="col-3">M E <br />Jeanz</h2>
+            <img class="col-4" src="./ft_images/banner-4.jpg" alt="ft banner 4" />
+            <div class="col-5">
+              <h3>
+                Supa Dry
+                <span class="badge badge-secondary">LIMITED</span>
+              </h3>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Cotton Thread</li>
+                <li class="list-group-item">Blue Color</li>
+                <li class="list-group-item">Batch-dyed taffeta</li>
+                <li class="list-group-item">Made in India</li>
+                <li class="list-group-item text-primary">
+                  Now Just for 1,900 rs
+                </li>
+                <br />
+              </ul>
+              <button class="btn btn-primary">Get It</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <a class="carousel-control-prev" href="#featured-carousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#featured-carousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <!-- Best Seller carousel -->
+  <div class="wrapper">
+    <h6 id="best-seller-title">Best Sellers of the week</h6>
+    <div id="best-seller">
+      <a href="#best-seller-container" class="prev" role="button">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <div id="best-seller-container"></div>
+      <a href="#best-seller-container" class="next" role="button">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Templates -->
+  <template id="card-template">
+    <div class="card d-inline-flex col-3" style="width: 18rem;">
+      <img src="./best_seller_images/banner-1.jpg" class="card-img-top" alt="banner" />
+      <div class="card-body">
+        <h5 class="card-title">...</h5>
+        <p class="card-text">...</p>
+      </div>
+    </div>
+  </template>
+
+  <!-- Scripts -->
+  <!------------->
+  <script src="./scripts/best_seller.js"></script>
 </body>
+
 </html>
-
-
-
-
