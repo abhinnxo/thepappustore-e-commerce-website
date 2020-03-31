@@ -95,7 +95,7 @@
 
 
     <!--side product view-->
-    <div class="side-navbar">
+    <div class="side-navbar h5">
         <div class="filters">
             
             <!--categories-->
@@ -113,7 +113,7 @@
             <ul class="brands">
                 <li>Peter England</li>
                 <li>Zara</li>
-                <li class="dropdown-btn">Untited Colours<i class="fas fa-angle-down"></i></li>
+                <li class="dropdown-btn">Untited Colours <img src="../img/arrow-down.png" alt=""></li>
                 <div class="dropdown-container">
                     <li href="#">Undergarments</li>
                     <li href="#">T-shirts</li>
@@ -134,12 +134,17 @@
                 <button style=" background-color: yellow;"></button>
             </div>
 
-            <!--price slider-->        
-        
-                <h5>Price</h5>
-            <div class="slidecontainer">
-                <h6>$10</h6><input type="range" min="10" max="200" value="100" class="slider" id="myRange"><h6>$<span id="demo"></span></h6>
-              </div>
+			<!--price slider-->   
+			<h5 style="padding-top:3vh;">Price</h5>     
+			<div class="row">
+				
+				<div class="slidecontainer row">
+					<h6 class="col-lg-3">$10</h6>
+					<input type="range" min="10" max="200"
+					 value="100" class="slider  col-lg-6" id="myRange"><h6 class="col-lg-3">$<span id="demo"></span></h6>
+				  </div>
+			</div>
+             
 
         </div>
     </div>
