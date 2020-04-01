@@ -8,6 +8,7 @@ var searchQuery = decodeURI(location.search.substring(1));
 searchQuery = searchQuery.split(/[=&]+/);
 searchQuery = searchQuery[searchQuery.indexOf("q") + 1];
 searchInput.value = searchQuery;
+
 //fetching json
 window.addEventListener("DOMContentLoaded", () => {
   fetch('/json/products.json')
@@ -45,10 +46,15 @@ function search(_query) {
   });
   ////Nothing to show
   if (!found)
-    searchDiv.innerHTML = '<div class="no-srh-result">Oops! can\'t found<br />Try searching something else</div>';
+    searchDiv.innerHTML = '<div class="no-srh-result"><p><i class="fa fa-meh-o"></i> Oops! can\'t found<br />Try searching something else</p></div>';
 };
 
 //search btn
 searchBtn.addEventListener('mouseup', () => {
-  location.href = `/navbar/product.html?${searchInput.value}`;
+  if (searchInput.value)
+    location.href = `/navbar/product.html?q=${searchInput.value}`;
 });
+searchInput.addEventListener('keypress', () => {
+  if (searchInput.value && event.keyCode == 13)
+    location.href = `/navbar/product.html?q=${searchInput.value}`;
+})

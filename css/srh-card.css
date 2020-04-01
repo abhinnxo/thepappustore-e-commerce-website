@@ -1,4 +1,5 @@
 .srh-card{
+  min-height: 12rem;
   padding: 1rem;
   margin: 1rem;
   border-radius: .3rem;
@@ -6,6 +7,12 @@
   background-color: #eee;
   color: #333;
   cursor: pointer;
+  transition: transform .1s ease-in;
+}
+
+.srh-card:hover{
+  border-color: #f51165;
+  transform: scale(1.01);
 }
 
 .srh-card-title::first-letter{

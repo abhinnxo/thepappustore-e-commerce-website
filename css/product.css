@@ -12,28 +12,25 @@ body
   /* Hide scrollbar for IE and Edge */
   .side-navbar {
     -ms-overflow-style: none;
-
   }
 
   .filters
   {
-      position: relative;
-      margin-left: 3vh;
-      margin-right: 2vh;
-      border-right: 2px solid lightgrey;
-      bottom: 0;
-      top: 0;
+    height: 100%;
+    margin-left: 3vh;
+    margin-right: 2vh;
+    padding: 1rem;
+    user-select: none;
   }
 
-   h5
+  h5::after
   {
-      
-      cursor: pointer;
+    content: '-';
+    /* cursor: pointer; */
   }
 
 .side-navbar
 {
-
     overflow: scroll;
     position: sticky;
     top: 0;
@@ -42,22 +39,24 @@ body
     margin-bottom: 0;
     height: 100vh;
     width: 40vh;
-
-    
+    border-right: 2px solid #d0d0d0;
 }
 
 .filters ul li
 {
-    list-style-type: none;
-    
+  display: block;
+  list-style: none;
+  transform-origin: center;
+  transition: transform .1s ease-in;
 }
 .filters ul li:hover
 {
     cursor: pointer;
-    font-weight: bold;
-    border-bottom-style: solid;
+    transform: scale(1.1);
+
+    /* border-bottom-style: solid;
     border-width: 1px;
-    border-bottom-color: #616C6F;
+    border-bottom-color: #616C6F; */
 }
 
 .dropdown-container {
@@ -72,16 +71,18 @@ body
   border: none;
   color: white;
   padding: 2vh;
-  text-align: center;
+  /* text-align: center; */
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   border-radius: 50%;
+  transform-origin: center;
+  transition: transform 0.1s ease-in .1s;
 }
 .colour button:hover
 {
-    transition: 0.1s;
-    padding: 1.5vh;
+    transition: transform 0.1s ease-in 0s;
+    transform: scale(.75);
 }
 
 /*price selector*/
@@ -123,24 +124,29 @@ body
     cursor: pointer;
   }
   /* for search and main div */
-  main#main-content.main-wrapper{
-    display: flex;
-    flex-direction: row;
-  }
-  
-  
-  .search-div{
-    flex: 1;
-    min-height: 100vh;
-  }
-  
-  .search-div .no-srh-result{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 3rem;
-    color: #eee;
-  }
+main#main-content.main-wrapper{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.search-div{
+  flex: 1;
+  min-height: 100vh;
+}
+
+.search-div .no-srh-result{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-div .no-srh-result p{
+  color: #f0f0f0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 3.5rem;
+  user-select: none;
+}
