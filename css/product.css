@@ -36,11 +36,11 @@ body
 
     overflow: scroll;
     position: sticky;
-    
+    top: 0;
     color: #616C6F;
     margin-top: 0;
     margin-bottom: 0;
-    height: 100%;
+    height: 100vh;
     width: 40vh;
 
     
@@ -122,4 +122,25 @@ body
     background: #282828;
     cursor: pointer;
   }
- 
+  /* for search and main div */
+  main#main-content.main-wrapper{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  
+  .search-div{
+    flex: 1;
+    min-height: 100vh;
+  }
+  
+  .search-div .no-srh-result{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    color: #eee;
+  }

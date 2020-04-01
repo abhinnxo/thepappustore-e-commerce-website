@@ -1,386 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>thepappustore</title>
-    <meta charset="UTF-8" />
-    <meta name="description" content=" Divisima | eCommerce website| Home" />
-    <meta name="keywords" content="thepappustore, eCommerce, home, login" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Scripts for bootstrap -->
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      crossorigin="anonymous"
-    />
-    <!-- Favicon -->
-    <link href="img/logo1.png" rel="shortcut icon" />
 
-    <!-- Google Font -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,700,700i"
-      rel="stylesheet"
-    />
+<head>
+  <title>thepappustore</title>
+  <meta charset="UTF-8" />
+  <meta name="description" content=" Divisima | eCommerce website| Home" />
+  <meta name="keywords" content="thepappustore, eCommerce, home, login" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Scripts for bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    crossorigin="anonymous" />
+  <!-- Favicon -->
+  <link href="img/logo1.png" rel="shortcut icon" />
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <link rel="stylesheet" href="css/flaticon.css" />
-    <link rel="stylesheet" href="css/slicknav.min.css" />
-    <link rel="stylesheet" href="css/jquery-ui.min.css" />
-    <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/animate.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/index.css" />
-  </head>
-  <body>
-    <!-- Header section -->
-    <header class="header-section">
-      <div class="header-top">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-2 text-center text-lg-left">
-              <!-- logo -->
-              <a href="./index.html" class="site-logo">
-                <img
-                  src="img/logo1.png"
-                  alt="logo"
-                  style="width: 10vh; height: 10vh;"
-                />
-              </a>
-            </div>
-            <div class="col-xl-6 col-lg-5">
-              <form class="header-search-form">
-                <input type="text" placeholder="Search on thepappustore ...." />
-                <button><i class="flaticon-search"></i></button>
-              </form>
-            </div>
-            <div class="col-xl-4 col-lg-5">
-              <div class="user-panel">
-                <div class="up-item">
-                  <i class="flaticon-profile"></i>
-                  <a href="#">Sign</a> In or <a href="#">Create Account</a>
-                </div>
-                <div class="up-item">
-                  <div class="shopping-card">
-                    <i class="flaticon-bag"></i>
-                    <span>0</span>
-                  </div>
-                  <a href="#">Shopping Cart</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <nav class="main-navbar">
-        <div class="container">
-          <!-- menu -->
-          <ul class="main-menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Women</a></li>
-            <li><a href="#">Men</a></li>
-            <li>
-              <a href="#"
-                >Jewelry
-                <span class="new">New</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">Shoes</a>
-              <ul class="sub-menu">
-                <li><a href="#">Sneakers</a></li>
-                <li><a href="#">Sandals</a></li>
-                <li><a href="#">Formal Shoes</a></li>
-                <li><a href="#">Boots</a></li>
-                <li><a href="#">Flip Flops</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">Pages</a>
-              <ul class="sub-menu">
-                <li><a href="./product.html">Product Page</a></li>
-                <li><a href="./category.html">Category Page</a></li>
-                <li><a href="./cart.html">Cart Page</a></li>
-                <li><a href="./checkout.html">Checkout Page</a></li>
-                <li><a href="./contact.html">Contact Page</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Blog</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <!-- Header section end -->
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,700,700i" rel="stylesheet" />
+  <!-- scripts (our) -->
+  <script defer src="/js/search.js"></script>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/flaticon.css" />
+  <link rel="stylesheet" href="css/slicknav.min.css" />
+  <link rel="stylesheet" href="css/jquery-ui.min.css" />
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/animate.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/index.css" />
+</head>
 
-    <!-- featured product carousel  -->
-    <div id="featured-carousel" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active border pb-3">
-          <div class="container">
-            <div class="row align-items-center">
-              <h2 class="col-3">Festival<br />super sale</h2>
-              <img
-                class="col-4"
-                src="img/ft_images/banner-1.jpg"
-                alt="ft banner 1"
-              />
-              <div class="col-5">
-                <h3>
-                  Flagship killer
-                  <span class="badge badge-secondary">NEW</span>
-                </h3>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">xyz phone</li>
-                  <li class="list-group-item">tri cams</li>
-                  <li class="list-group-item">oled display</li>
-                  <li class="list-group-item">stereo speakers</li>
-                  <li class="list-group-item text-primary">For 29,000 rs</li>
-                  <br />
-                </ul>
-                <button class="btn btn-primary">Buy now</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item border pb-3">
-          <div class="container">
-            <div class="row align-items-center">
-              <h2 class="col-3">BIG<br />MARKET SALE</h2>
-              <img
-                class="col-4"
-                src="img/ft_images/banner-2.jpg"
-                alt="ft banner 2"
-              />
-              <div class="col-5">
-                <h3>
-                  Deal of the month
-                </h3>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Smart Inverter Compressor</li>
-                  <li class="list-group-item">Dual Fridge</li>
-                  <li class="list-group-item">Multi Air Flow</li>
-                  <li class="list-group-item">Royale Handle</li>
-                  <li class="list-group-item">Moist ‘N’ Fresh</li>
-                  <br />
-                </ul>
-                <button class="btn btn-primary">Buy now</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item border pb-3">
-          <div class="container">
-            <div class="row align-items-center">
-              <h2 class="col-3">Flash sale</h2>
-              <img
-                class="col-4"
-                src="img/ft_images/banner-3.jpg"
-                alt="ft banner 3"
-              />
-              <div class="col-5">
-                <h3>
-                  Samsung
-                  <span class="badge badge-secondary">SALE</span>
-                </h3>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">U70 pro (256 GB | 8GB)</li>
-                  <li class="list-group-item">Oled display</li>
-                  <li class="list-group-item">5G & wifi 6</li>
-                  <li class="list-group-item">Android 11</li>
-                  <li class="list-group-item text-primary">
-                    Now Just for 37,000 rs
-                  </li>
-                  <br />
-                </ul>
-                <button class="btn btn-primary">Shop now</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item border pb-3">
-          <div class="container">
-            <div class="row align-items-center">
-              <h2 class="col-3">M E <br />Jeanz</h2>
-              <img
-                class="col-4"
-                src="img/ft_images/banner-4.jpg"
-                alt="ft banner 4"
-              />
-              <div class="col-5">
-                <h3>
-                  Supa Dry
-                  <span class="badge badge-secondary">LIMITED</span>
-                </h3>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Cotton Thread</li>
-                  <li class="list-group-item">Blue Color</li>
-                  <li class="list-group-item">Batch-dyed taffeta</li>
-                  <li class="list-group-item">Made in India</li>
-                  <li class="list-group-item text-primary">
-                    Now Just for 1,900 rs
-                  </li>
-                  <br />
-                </ul>
-                <button class="btn btn-primary">Get It</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a
-        class="carousel-control-prev"
-        href="#featured-carousel"
-        role="button"
-        data-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a
-        class="carousel-control-next"
-        href="#featured-carousel"
-        role="button"
-        data-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-    
-	  <!-- Best Seller carousel -->
-    <div class="wrapper">
-      <h6 id="best-seller-title">Best Sellers of the week</h6>
-      <div id="best-seller">
-        <a class="prev" role="button">
-          <span class="carousel-control-prev-icon"></span>
-        </a>
-        <div id="best-seller-container"></div>
-        <a class="next" role="button">
-          <span class="carousel-control-next-icon"></span>
-        </a>
-      </div>
-    </div>
-
-    <!-- Templates -->
-    <template id="card-template">
-      <div class="card d-inline-flex col-3" style="width: 18rem;">
-        <img
-          src="img/best_seller_images/banner-1.jpg"
-          class="card-img-top"
-          alt="banner"
-        />
-        <div class="card-body">
-          <h5 class="card-title">...</h5>
-          <p class="card-text">...</p>
-        </div>
-      </div>
-    </template>
-
-    <!-- Scripts -->
-    <!------------->
-    <script src="js/best_seller.js"></script>
-    <!--end of carousel(s)-->
-
-    <!-- Footer section -->
-    <section class="footer-section">
+<body>
+  <!-- Header section -->
+  <header class="header-section">
+    <div class="header-top">
       <div class="container">
-        <div class="footer-logo text-center">
-          <a href="index.html"
-            ><img
-              src="./img/logo1.png"
-              alt=""
-              style="width: 10vh; height: 10vh;"
-          /></a>
-          <h3 style="color: #ffffff;">thepappustore</h3>
-        </div>
         <div class="row">
-          <div class="col-lg-4 col-sm-12">
-            <div class="footer-widget about-widget">
-              <h2>About</h2>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Voluptate, accusantium quas excepturi sint dolor animi, placeat
-                quisquam similique ipsam aut asperiores, perferendis inventore?
-                Tenetur in accusamus rem! Incidunt, nostrum rem.
-              </p>
-              <img src="img/cards.png" alt="" />
+          <div class="col-lg-2 text-center text-lg-left">
+            <!-- logo -->
+            <a href="./index.html" class="site-logo">
+              <img src="img/logo1.png" alt="logo" style="width: 10vh; height: 10vh;" />
+            </a>
+          </div>
+          <div class="col-xl-6 col-lg-5">
+            <div class="header-search-form">
+              <input id="search-input" type="text" placeholder="Search on thepappustore ...." />
+              <button id="search-btn"><i class="flaticon-search"></i></button>
             </div>
           </div>
-          <div class="col-lg-4 col-sm-12">
-            <div class="footer-widget about-widget">
-              <h2>Useful Links</h2>
-              <ul>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Track Orders</a></li>
-                <li><a href="">Returns</a></li>
-                <li><a href="">Jobs</a></li>
-                <li><a href="">Shipping</a></li>
-                <li><a href="">Blog</a></li>
-              </ul>
-              <ul>
-                <li><a href="">Partners</a></li>
-                <li><a href="">Bloggers</a></li>
-                <li><a href="">Support</a></li>
-                <li><a href="">Terms of Use</a></li>
-                <li><a href="">Press</a></li>
-              </ul>
+          <div class="col-xl-4 col-lg-5">
+            <div class="user-panel">
+              <div class="up-item">
+                <i class="flaticon-profile"></i>
+                <a href="#">Sign</a> In or <a href="#">Create Account</a>
+              </div>
+              <div class="up-item">
+                <div class="shopping-card">
+                  <i class="flaticon-bag"></i>
+                  <span>0</span>
+                </div>
+                <a href="#">Shopping Cart</a>
+              </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+    <nav class="main-navbar">
+      <div class="container">
+        <!-- menu -->
+        <ul class="main-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Men</a></li>
+          <li>
+            <a href="#">Jewelry
+              <span class="new">New</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">Shoes</a>
+            <ul class="sub-menu">
+              <li><a href="#">Sneakers</a></li>
+              <li><a href="#">Sandals</a></li>
+              <li><a href="#">Formal Shoes</a></li>
+              <li><a href="#">Boots</a></li>
+              <li><a href="#">Flip Flops</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Pages</a>
+            <ul class="sub-menu">
+              <li><a href="./product.html">Product Page</a></li>
+              <li><a href="./category.html">Category Page</a></li>
+              <li><a href="./cart.html">Cart Page</a></li>
+              <li><a href="./checkout.html">Checkout Page</a></li>
+              <li><a href="./contact.html">Contact Page</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Header section end -->
 
-         
-          <div class="col-lg-4 col-sm-12">
-            <div class="footer-widget contact-widget">
-              <h2>Address</h2>
-              <div class="con-info">
-                <p>thepappustore Ltd</p>
-              </div>
-              <div class="con-info">
-                <p>New Delhi -06, P.O. BOX 68</p>
-              </div>
-              <div class="con-info">
-                <p>+91 345 7953 32453</p>
-              </div>
-              <div class="con-info">
-                <p>office@youremail.com</p>
-              </div>
+  <!-- featured product carousel  -->
+  <div id="featured-carousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active border pb-3">
+        <div class="container">
+          <div class="row align-items-center">
+            <h2 class="col-3">Festival<br />super sale</h2>
+            <img class="col-4" src="img/ft_images/banner-1.jpg" alt="ft banner 1" />
+            <div class="col-5">
+              <h3>
+                Flagship killer
+                <span class="badge badge-secondary">NEW</span>
+              </h3>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">xyz phone</li>
+                <li class="list-group-item">tri cams</li>
+                <li class="list-group-item">oled display</li>
+                <li class="list-group-item">stereo speakers</li>
+                <li class="list-group-item text-primary">For 29,000 rs</li>
+                <br />
+              </ul>
+              <button class="btn btn-primary">Buy now</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="social-links-warp row">
+      <div class="carousel-item border pb-3">
         <div class="container">
-          <div class="social-links">
-            <a href="" class="instagram"
-              ><i class="fa fa-instagram"></i><span>instagram</span></a
-            >
-            <a href="" class="pinterest"
-              ><i class="fa fa-pinterest"></i><span>pinterest</span></a
-            >
-            <a href="" class="facebook"
-              ><i class="fa fa-facebook"></i><span>facebook</span></a
-            >
-            <a href="" class="twitter"
-              ><i class="fa fa-twitter"></i><span>twitter</span></a
-            >
-            <a href="" class="youtube"
-              ><i class="fa fa-youtube"></i><span>youtube</span></a
-            >
-            <a href="" class="tumblr"
-              ><i class="fa fa-tumblr-square"></i><span>tumblr</span></a
-            >
+          <div class="row align-items-center">
+            <h2 class="col-3">BIG<br />MARKET SALE</h2>
+            <img class="col-4" src="img/ft_images/banner-2.jpg" alt="ft banner 2" />
+            <div class="col-5">
+              <h3>
+                Deal of the month
+              </h3>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Smart Inverter Compressor</li>
+                <li class="list-group-item">Dual Fridge</li>
+                <li class="list-group-item">Multi Air Flow</li>
+                <li class="list-group-item">Royale Handle</li>
+                <li class="list-group-item">Moist ‘N’ Fresh</li>
+                <br />
+              </ul>
+              <button class="btn btn-primary">Buy now</button>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Footer section end -->
-  </body>
+      <div class="carousel-item border pb-3">
+        <div class="container">
+          <div class="row align-items-center">
+            <h2 class="col-3">Flash sale</h2>
+            <img class="col-4" src="img/ft_images/banner-3.jpg" alt="ft banner 3" />
+            <div class="col-5">
+              <h3>
+                Samsung
+                <span class="badge badge-secondary">SALE</span>
+              </h3>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">U70 pro (256 GB | 8GB)</li>
+                <li class="list-group-item">Oled display</li>
+                <li class="list-group-item">5G & wifi 6</li>
+                <li class="list-group-item">Android 11</li>
+                <li class="list-group-item text-primary">
+                  Now Just for 37,000 rs
+                </li>
+                <br />
+              </ul>
+              <button class="btn btn-primary">Shop now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item border pb-3">
+        <div class="container">
+          <div class="row align-items-center">
+            <h2 class="col-3">M E <br />Jeanz</h2>
+            <img class="col-4" src="img/ft_images/banner-4.jpg" alt="ft banner 4" />
+            <div class="col-5">
+              <h3>
+                Supa Dry
+                <span class="badge badge-secondary">LIMITED</span>
+              </h3>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Cotton Thread</li>
+                <li class="list-group-item">Blue Color</li>
+                <li class="list-group-item">Batch-dyed taffeta</li>
+                <li class="list-group-item">Made in India</li>
+                <li class="list-group-item text-primary">
+                  Now Just for 1,900 rs
+                </li>
+                <br />
+              </ul>
+              <button class="btn btn-primary">Get It</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#featured-carousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#featured-carousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <!-- Best Seller carousel -->
+  <div class="wrapper">
+    <h6 id="best-seller-title">Best Sellers of the week</h6>
+    <div id="best-seller">
+      <a class="prev" role="button">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <div id="best-seller-container"></div>
+      <a class="next" role="button">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Templates -->
+  <template id="card-template">
+    <div class="card d-inline-flex col-3" style="width: 18rem;">
+      <img src="img/best_seller_images/banner-1.jpg" class="card-img-top" alt="banner" />
+      <div class="card-body">
+        <h5 class="card-title">...</h5>
+        <p class="card-text">...</p>
+      </div>
+    </div>
+  </template>
+
+  <!-- Scripts -->
+  <!------------->
+  <script src="js/best_seller.js"></script>
+  <!--end of carousel(s)-->
+
+  <!-- Footer section -->
+  <section class="footer-section">
+    <div class="container">
+      <div class="footer-logo text-center">
+        <a href="index.html"><img src="./img/logo1.png" alt="" style="width: 10vh; height: 10vh;" /></a>
+        <h3 style="color: #ffffff;">thepappustore</h3>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-sm-12">
+          <div class="footer-widget about-widget">
+            <h2>About</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptate, accusantium quas excepturi sint dolor animi, placeat
+              quisquam similique ipsam aut asperiores, perferendis inventore?
+              Tenetur in accusamus rem! Incidunt, nostrum rem.
+            </p>
+            <img src="img/cards.png" alt="" />
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-12">
+          <div class="footer-widget about-widget">
+            <h2>Useful Links</h2>
+            <ul>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Track Orders</a></li>
+              <li><a href="">Returns</a></li>
+              <li><a href="">Jobs</a></li>
+              <li><a href="">Shipping</a></li>
+              <li><a href="">Blog</a></li>
+            </ul>
+            <ul>
+              <li><a href="">Partners</a></li>
+              <li><a href="">Bloggers</a></li>
+              <li><a href="">Support</a></li>
+              <li><a href="">Terms of Use</a></li>
+              <li><a href="">Press</a></li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-sm-12">
+          <div class="footer-widget contact-widget">
+            <h2>Address</h2>
+            <div class="con-info">
+              <p>thepappustore Ltd</p>
+            </div>
+            <div class="con-info">
+              <p>New Delhi -06, P.O. BOX 68</p>
+            </div>
+            <div class="con-info">
+              <p>+91 345 7953 32453</p>
+            </div>
+            <div class="con-info">
+              <p>office@youremail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="social-links-warp row">
+      <div class="container">
+        <div class="social-links">
+          <a href="" class="instagram"><i class="fa fa-instagram"></i><span>instagram</span></a>
+          <a href="" class="pinterest"><i class="fa fa-pinterest"></i><span>pinterest</span></a>
+          <a href="" class="facebook"><i class="fa fa-facebook"></i><span>facebook</span></a>
+          <a href="" class="twitter"><i class="fa fa-twitter"></i><span>twitter</span></a>
+          <a href="" class="youtube"><i class="fa fa-youtube"></i><span>youtube</span></a>
+          <a href="" class="tumblr"><i class="fa fa-tumblr-square"></i><span>tumblr</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer section end -->
+</body>
+
 </html>
