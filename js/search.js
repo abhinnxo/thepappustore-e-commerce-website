@@ -52,9 +52,9 @@ function search(_query) {
 //search btn
 searchBtn.addEventListener('mouseup', () => {
   if (searchInput.value)
-    location.href = `/navbar/product.html?q=${searchInput.value}`;
+    location.href = `product.html?q=${searchInput.value}`;
 });
 searchInput.addEventListener('keypress', () => {
   if (searchInput.value && event.keyCode == 13)
-    location.href = `/navbar/product.html?q=${searchInput.value}`;
+    location.href = `product.html?q=${searchInput.value}`;
 })
