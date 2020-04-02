@@ -1,13 +1,8 @@
-/* =================================
-------------------------------------
-  Divisima | eCommerce Template
-  Version: 1.0
- ------------------------------------
- ====================================*/
+
 
 
 /*----------------------------------------*/
-/* Template default CSS
+/*  default CSS
 /*----------------------------------------*/
 
 html,
@@ -72,7 +67,7 @@ textarea:focus {
 
 a:hover,
 a:focus {
-	text-decoration: none;
+	text-decoration: underline;
 	outline: none;
 }
 
@@ -456,7 +451,7 @@ ol {
 }
 
 .main-menu li:hover>a {
-	color: #f51167;
+	text-decoration: underline;
 }
 
 .main-menu .sub-menu {
