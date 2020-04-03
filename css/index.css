@@ -1,11 +1,7 @@
-/* 
-.card{
-    position: absolute;
-    bottom:0%;
-    width: 100%;
-    background-color: #111111;
-
-} */
+body
+{
+  margin: 0 !important;
+}
 
 /*carousel sliders*/
 .carousel-control-next-icon,

@@ -1,7 +1,10 @@
 body
 {
-    margin: 0 !important;
+  margin: 0 !important;
     background-color: #eeeeee;
+    font-family: 'Josefin Sans', sans-serif !important;
+    height: 100% !important;
+
 }
 
 /*Hide scrollbars from chrome, safari and firefox*/

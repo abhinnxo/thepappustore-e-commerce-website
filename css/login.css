@@ -2,6 +2,8 @@ body
 {
     background-color: #eeeeee !important;
     -ms-overflow-style: none !important;
+    font-family: 'Josefin Sans', sans-serif !important;
+
 }
 
 /*Hide scrollbars from chrome, safari and firefox*/
@@ -9,7 +11,10 @@ body::-webkit-scrollbar {
     display: none !important;
   }
  
-
+h1
+{
+  font-weight: bold;
+}
 
 
 
