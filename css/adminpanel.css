@@ -1,0 +1,61 @@
+body
+{
+    align-items: center !important;
+    margin: 10vh !important;
+    background-color: #ededed;
+
+}
+
+
+.admin-navbar
+{
+    position: relative;
+    text-align: center;
+    background-color: lightgrey;  
+    height: 10vh;
+}
+h2
+{
+    margin-top: 3vh;
+    text-decoration: underline !important;
+}
+
+h3
+{
+    padding-top: 5vh;
+}
+
+.admin-text
+{
+    position: absolute;
+    margin-top: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 100%;
+
+}
+
+
+
+
+
+ #campany, #item, #discount, #price
+{
+    width: 100%;
+    padding: 10px;
+}
+
+.btn
+{
+        background-color: #282828 !important;
+        color: white !important;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+         
+}
+.btn:hover
+{
+    opacity: 0.5;
+}
