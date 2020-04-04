@@ -1,11 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/logo1.png" type="image/x-icon">
+
+  <!--css-->
+  <link rel="stylesheet" href="css/adminpanel.css">
+
+  <!--fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,700,700i" rel="stylesheet" />
+  <!-- <link rel="stylesheet" href="css/style.css" /> -->
+
+
+  <title>Admins' Panel</title>
 </head>
+
 <body>
-    admin's panel
+  <div class="admin-navbar">
+    <h2>Admins' Panel</h2>
+  </div>
+  <div class="admin-text">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium porro quos tempore repudiandae
+      cupiditate, distinctio impedit quo sed explicabo inventore eum eligendi. Veniam repudiandae modi minima quos
+      magni cupiditate at!
+    </p>
+    <div class="admin-form">
+      <h3>Company</h3>
+      <input value="HK" type="text" id="campany" placeholder="enter company name">
+      <h3>Item</h3>
+      <input value="speakers" type="text" id="item" placeholder="enter item name">
+      <h3>Tags</h3>
+      <input value="speaker sound soundsystem hometheatre home-theatre" type="text" id="price"
+        placeholder="seprate tags by space">
+      <h3>Options</h3>
+      <input value="3kW 32GB lightweight" type="text" id="discount" placeholder="seprate options by commas (,)">
+    </div>
+    <button onclick="addNewProduct()" class="btn">Submit</button>
+    <!--javascript-->
+    <script src="adminpanel.js"></script>
+
+
+
+
+
+  </div>
+
+
+
 </body>
+
 </html>
